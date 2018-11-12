@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import injectSheet from 'react-jss';
 import { Form, Field, reduxForm } from 'redux-form';
+import { Link } from 'react-router-dom';
 
 import RenderField from '../RenderField';
 import styles from '../styles';
@@ -48,6 +49,10 @@ class SignUpForm extends Component {
           />
           <button className={classes.button}>Sign Up</button>
         </Form>
+        <p className={classes.colorWhite}>
+          Already have an account?{' '}
+          <Link to={'/login'}>Login</Link>
+        </p>
       </div>
     );
   }

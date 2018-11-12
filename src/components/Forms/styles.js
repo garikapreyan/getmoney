@@ -6,12 +6,17 @@ const hoverColor = 'rgb(28, 140, 0)';
 export default {
   wrapper: {
     height: '500px',
+    minWidth: '300px',
     maxWidth: '380px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: backColor,
     borderRadius: '10px'
   },
   form: {
-    height: '100%',
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -47,5 +52,8 @@ export default {
     '&:focus': {
       outline: 0
     }
+  },
+  colorWhite: {
+    color: 'white'
   }
 }
