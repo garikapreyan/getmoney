@@ -1,20 +1,9 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import { Form, Field, reduxForm } from 'redux-form';
 import injectSheet from 'react-jss';
-import { Button } from 'mdbreact';
 
+import renderField from '../RenderField';
 import styles from '../styles';
-
-const renderField = ({input, name, label, type, autoComplete, placeholder, classes}) =>
-  <div className={classes.fieldWrapper||''}>
-    <label htmlFor={name} className={classes.label}>{label}</label>
-    <input {...input}
-           type={type}
-           autoComplete={autoComplete||''}
-           placeholder={placeholder||''}
-           className={`${classes.field||''} form-control`}
-    />
-  </div>;
 
 class LoginForm extends Component {
   render() {

@@ -5,8 +5,8 @@ const hoverColor = 'rgb(28, 140, 0)';
 
 export default {
   wrapper: {
-    height: '450px',
-    maxWidth: '350px',
+    height: '500px',
+    maxWidth: '380px',
     backgroundColor: backColor,
     borderRadius: '10px'
   },
